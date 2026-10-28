@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff5f9e" />
+  <title>Happy Birthday Anamika 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap');
+    :root{--pink:#ff5f9e;--deep:#9c3d91;--purple:#7357d8;--cream:#fff8fc;--ink:#482b4a}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Poppins',sans-serif;color:var(--ink);background:linear-gradient(140deg,#fff0f7,#f4edff 55%,#fff8ec);overflow-x:hidden}
+    button{font:inherit;cursor:pointer}
+    .floaties{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+    .floaty{position:absolute;bottom:-60px;opacity:.55;animation:rise linear infinite;font-size:22px}
+    @keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+    .wrap{position:relative;z-index:1;width:min(1080px,92%);margin:auto}
+    .hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:72px 16px 50px;position:relative}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid #ffffffd9;background:#ffffffa6;border-radius:999px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 25px #a54e8a12}
+    h1{font-size:clamp(3.2rem,11vw,7.7rem);line-height:.98;margin:24px 0 14px;letter-spacing:-.055em;color:#a13e8c;text-shadow:0 5px 0 #fff8}
+    h1 span{display:block;font-family:'Great Vibes',cursive;font-weight:400;color:#ff5798;font-size:1.16em;letter-spacing:0;text-shadow:0 5px 25px #ff57982c}
+    .subtitle{max-width:610px;margin:0 auto;color:#765c79;line-height:1.8;font-size:clamp(.95rem,2.6vw,1.12rem)}
+    .hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{border:0;border-radius:999px;padding:14px 23px;font-weight:700;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-3px)}
+    .primary{color:white;background:linear-gradient(135deg,#ff5798,#a454cf);box-shadow:0 12px 28px #e95b9c44}
+    .secondary{background:#ffffffc9;color:#9b438b;border:1px solid #efcfe5}
+    .scroll-note{position:absolute;bottom:24px;font-size:.78rem;color:#a07aa0;letter-spacing:.12em;text-transform:uppercase}
+    section{padding:76px 0}
+    .section-head{text-align:center;margin-bottom:34px}
+    .eyebrow{font-size:.75rem;letter-spacing:.17em;text-transform:uppercase;color:#d34e91;font-weight:700}
+    h2{font-size:clamp(2rem,6vw,3.5rem);line-height:1.15;margin:10px 0;color:#7c438f}
+    .section-head p{color:#8a718b;line-height:1.7;max-width:600px;margin:0 auto}
+    .card{background:#ffffffb8;border:1px solid #fff;box-shadow:0 18px 55px #814a8a12;border-radius:28px;backdrop-filter:blur(10px)}
+    .message-card{max-width:790px;margin:auto;padding:clamp(24px,5vw,48px);text-align:center;position:relative;overflow:hidden}
+    .message-card:before{content:'♡';position:absolute;font-size:150px;color:#ff9fc722;right:12px;top:-40px;line-height:1}
+    .message-card p{position:relative;line-height:1.95;color:#725b77;font-size:1.02rem}
+    .signature{font-family:'Great Vibes',cursive;color:#f05a9c;font-size:2.5rem;margin-top:18px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .photo{padding:10px 10px 17px;transform:rotate(var(--tilt));transition:transform .25s;cursor:pointer}
+    .photo:hover{transform:rotate(0deg) translateY(-7px)}
+    .photo-frame{aspect-ratio:4/5;border-radius:18px;display:grid;place-items:center;text-align:center;padding:14px;background:linear-gradient(145deg,#ffe0ed,#e7dcff);border:1px dashed #e5a7ce;color:#a05e96;overflow:hidden}
+    .photo-frame .camera{font-size:2.3rem;display:block;margin-bottom:10px}
+    .photo-frame small{display:block;line-height:1.6}
+    .photo-frame img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+    .photo-caption{text-align:center;padding-top:14px;font-family:'Great Vibes',cursive;font-size:1.65rem;color:#a34b8c}
+    .cake-area{text-align:center;padding:36px 20px 42px}
+    .cake{font-size:clamp(5rem,18vw,9rem);filter:drop-shadow(0 15px 15px #c95c8b22);animation:bob 2.6s ease-in-out infinite;display:block}
+    @keyframes bob{50%{transform:translateY(-10px) rotate(2deg)}}
+    .cake-area p{color:#886b8c;line-height:1.7}
+    .wish-result{display:none;max-width:650px;margin:22px auto 0;padding:20px;border-radius:20px;background:#fff5fa;color:#93447f;line-height:1.8;animation:pop .45s ease both}
+    .wish-result.show{display:block}
+    @keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+    footer{text-align:center;padding:34px 15px 45px;color:#a17d9d;font-size:.85rem}
+    .heart{display:inline-block;color:#ff5798;animation:heartbeat 1.1s infinite}
+    @keyframes heartbeat{50%{transform:scale(1.25)}}
+    .confetti{position:fixed;top:-20px;width:9px;height:14px;z-index:10;pointer-events:none;animation:confetti-fall 3.5s linear forwards}
+    @keyframes confetti-fall{to{transform:translateY(110vh) rotate(780deg);opacity:.2}}
+    @media(max-width:700px){.gallery{grid-template-columns:repeat(2,1fr);gap:12px}.gallery .photo:last-child{grid-column:1/-1;width:70%;justify-self:center}.hero{min-height:94svh}section{padding:58px 0}}
+    @media(max-width:420px){.gallery{grid-template-columns:1fr}.gallery .photo:last-child{grid-column:auto;width:100%}.photo{max-width:330px;width:100%;margin:auto}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="floaties" id="floaties" aria-hidden="true"></div>
+  <header class="hero wrap">
+    <div>
+      <div class="pill">🎀 A little surprise made with love</div>
+      <h1>Happy Birthday <span>Anamika!</span></h1>
+      <p class="subtitle">To my amazing best friend — may your day be full of laughter, little surprises, sweet memories, and all the happiness your heart can hold. 💗</p>
+      <div class="hero-actions">
+        <button class="btn primary" id="surpriseBtn">Open your surprise ✨</button>
+        <button class="btn secondary" onclick="document.getElementById('memories').scrollIntoView({behavior:'smooth'})">Our memories 📸</button>
+      </div>
+    </div>
+    <div class="scroll-note">Scroll down for your birthday magic ↓</div>
+  </header>
+
+  <main class="wrap">
+    <section id="message">
+      <div class="section-head"><div class="eyebrow">A note from me to you</div><h2>For my favourite human 💌</h2><p>Some people make ordinary days feel special. You're one of those people.</p></div>
+      <article class="card message-card">
+        <p>Dear Anamika,</p>
+        <p>Happy Birthday to the friend who makes life brighter just by being in it! 🌷 Thank you for the laughs, the random conversations, the unforgettable moments, and for being wonderfully YOU.</p>
+        <p>I hope this new year of your life brings you confidence to chase every dream, courage for every challenge, peaceful days when you need them, and a thousand reasons to smile. Never forget how special you are and how much you deserve all the beautiful things life has to offer.</p>
+        <p>Whatever adventures come next, I hope we keep making memories, laughing at silly things, and being there for each other. Today is all about celebrating YOU!</p>
+        <div class="signature">Your best friend, always ♡</div>
+      </article>
+    </section>
+
+    <section id="memories">
+      <div class="section-head"><div class="eyebrow">Little moments, big memories</div><h2>Our memory gallery 📷</h2><p>Replace these placeholders with your favourite pictures together whenever you're ready.</p></div>
+      <div class="gallery">
+        <div class="card photo" style="--tilt:-2deg"><div class="photo-frame"><div><span class="camera">📸</span><strong>Photo 1</strong><small>Add your favourite picture here</small></div></div><div class="photo-caption">The beginning of a memory</div></div>
+        <div class="card photo" style="--tilt:1.5deg"><div class="photo-frame"><div><span class="camera">💗</span><strong>Photo 2</strong><small>A moment worth keeping</small></div></div><div class="photo-caption">Partners in crime</div></div>
+        <div class="card photo" style="--tilt:-1deg"><div class="photo-frame"><div><span class="camera">🌸</span><strong>Photo 3</strong><small>One more beautiful memory</small></div></div><div class="photo-caption">Always making memories</div></div>
+      </div>
+    </section>
+
+    <section id="wish">
+      <div class="section-head"><div class="eyebrow">Make a birthday wish</div><h2>One wish, just for you 🎂</h2><p>Close your eyes, make a wish, and tap the button when you're ready!</p></div>
+      <div class="card cake-area">
+        <span class="cake" role="img" aria-label="Birthday cake">🎂</span>
+        <button class="btn primary" id="wishBtn">My wish is ready! 🎉</button>
+        <div class="wish-result" id="wishResult">✨ May your wishes find their way to you, may your smile never fade, and may this year be one of your most beautiful chapters yet. Happy Birthday, Anamika! 💖</div>
+      </div>
+    </section>
+  </main>
+  <footer>Made with <span class="heart">♥</span> for Anamika · Happy Birthday!</footer>
+
+  <script>
+    // Floating hearts and sparkles in the background
+    const floaties = document.getElementById('floaties');
+    const symbols = ['♡','♥','✦','✧','💗','✨'];
+    for (let i = 0; i < 24; i++) {
+      const item = document.createElement('span');
+      item.className = 'floaty';
+      item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+      item.style.left = Math.random() * 100 + '%';
+      item.style.animationDuration = (9 + Math.random() * 13) + 's';
+      item.style.animationDelay = (-Math.random() * 20) + 's';
+      item.style.fontSize = (14 + Math.random() * 18) + 'px';
+      floaties.appendChild(item);
+    }
+
+    function celebrate(count = 100) {
+      const colors = ['#ff5f9e','#b88af4','#ffd166','#ff9fbd','#a9def9','#caffbf'];
+      for (let i = 0; i < count; i++) {
+        const bit = document.createElement('i');
+        bit.className = 'confetti';
+        bit.style.left = Math.random() * 100 + 'vw';
+        bit.style.background = colors[Math.floor(Math.random() * colors.length)];
+        bit.style.animationDelay = Math.random() * .8 + 's';
+        bit.style.animationDuration = (2.4 + Math.random() * 2) + 's';
+        bit.style.transform = `rotate(${Math.random() * 360}deg)`;
+        document.body.appendChild(bit);
+        setTimeout(() => bit.remove(), 5000);
+      }
+    }
+
+    document.getElementById('surpriseBtn').addEventListener('click', () => {
+      celebrate(130);
+      document.getElementById('message').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('wishBtn').addEventListener('click', () => {
+      document.getElementById('wishResult').classList.add('show');
+      celebrate(90);
+      document.getElementById('wishBtn').textContent = 'Wish sent to the universe 💫';
+    });
+  </script>
+</body>
+</html>
